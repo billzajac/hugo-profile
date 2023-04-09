@@ -60,23 +60,6 @@
                         </li>
                     {{ end }}
 
-                    {{ if and (.Site.Params.about.enable | default false) (not (.Site.Params.navbar.menus.disableAbout | default false)) }}
-                    <li class="nav-item navbar-text">
-                        <a class="nav-link" href="{{ .Site.BaseURL | relURL }}#about" aria-label="about">
-                            {{ .Site.Params.about.title | default "About" }}
-                        </a>
-                    </li>
-                    {{ end }}
-
-                    {{ if and (.Site.Params.contact.enable | default false) (not (.Site.Params.navbar.menus.disableContact | default false)) }}
-                    <li class="nav-item navbar-text">
-                        <a class="nav-link" href="{{ .Site.BaseURL | relURL }}#contact"
-                            aria-label="contact">
-                            {{ .Site.Params.contact.title | default "Contact" }}
-                        </a>
-                    </li>
-                    {{ end }}
-
                     <!-- custom menus from the user -->
                     {{ range .Site.Menus.main }}
                     {{ if .HasChildren }}
@@ -105,6 +88,23 @@
                     </li>
                     {{end}}
                     {{end}}
+
+                    {{ if and (.Site.Params.about.enable | default false) (not (.Site.Params.navbar.menus.disableAbout | default false)) }}
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="{{ .Site.BaseURL | relURL }}#about" aria-label="about">
+                            {{ .Site.Params.about.title | default "About" }}
+                        </a>
+                    </li>
+                    {{ end }}
+
+                    {{ if and (.Site.Params.contact.enable | default false) (not (.Site.Params.navbar.menus.disableContact | default false)) }}
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="{{ .Site.BaseURL | relURL }}#contact"
+                            aria-label="contact">
+                            {{ .Site.Params.contact.title | default "Contact" }}
+                        </a>
+                    </li>
+                    {{ end }}
 
                     {{ if (not .Site.Params.theme.disableThemeToggle | default false) }}
                     <li class="nav-item navbar-text">

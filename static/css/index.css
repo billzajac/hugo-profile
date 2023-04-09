@@ -472,17 +472,17 @@ header .navbar.animate {
     opacity: 0.8;
 }
 
-/* achievements */
+/* press */
 
-#achievements a {
+#press a {
     text-decoration: none;
 }
 
-#achievements h3 {
+#press h3 {
     color: var(--text-secondary-color) !important;
 }
 
-#achievements .card {
+#press .card {
     cursor: context-menu;
     background-color: var(--secondary-color) !important;
     border-radius: 1rem;
@@ -492,25 +492,25 @@ header .navbar.animate {
     border: 2px solid transparent;
 }
 
-#achievements a.card {
+#press a.card {
     cursor: alias;
 }
 
-#achievements .card h5 {
+#press .card h5 {
     color: var(--text-color) !important;
     opacity: 0.9;
 }
 
-#achievements .card:hover {
+#press .card:hover {
     border: 2px solid var(--text-color);
     transition: .3s;
 }
-#achievements .card:focus {
+#press .card:focus {
     border: 2px solid var(--text-color);
     transition: .3s;
 }
 
-#achievements .card-text {
+#press .card-text {
     background-color: var(--secondary-color) !important;
     color: var(--text-secondary-color) !important;
 }

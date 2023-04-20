@@ -121,8 +121,9 @@ header .navbar.animate {
     transition: box-shadow 0.3s;
 }
 
+/*
 #hero .image img:hover {
-    cursor: pointer;
+    cursor: default;
 }
 
 #hero .image.animate img:hover {
@@ -130,6 +131,7 @@ header .navbar.animate {
     filter: contrast(1.2);
     cursor: pointer;
 }
+*/
 
 #hero a.btn.social-icon {
     color: var(--primary-color) !important;
